@@ -1,45 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tanveer Iqbal</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanveer Iqbal - Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2d3436;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .header p {
+            color: #636e72;
+            font-size: 1.1rem;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+
+        .profile-image {
+            flex: 0 0 300px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h2 {
+            color: #2d3436;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-info p {
+            margin-bottom: 2rem;
+            color: #636e72;
+            font-size: 1.1rem;
+        }
+
+        .skills {
+            margin-bottom: 2rem;
+        }
+
+        .skills h3 {
+            color: #2d3436;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: #f0f2f5;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            color: #2d3436;
+            font-size: 0.9rem;
+        }
+
+        .achievement {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #0984e3;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact-section h2 {
+            color: #2d3436;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-links a {
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: #074e81;
+        }
+
+        .signature {
+            text-align: center;
+        }
+
+        .signature img {
+            width: 200px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                gap: 2rem;
+                padding: 2rem;
+            }
+
+            .profile-image {
+                flex: 0 0 200px;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <section class="center">
-        <h1 style="margin-top: 10%;">Tanveer Iqbal</h1>
-        <p>
-            Twelve years of expertise in the field of technology, encompassing an energetic leadership role. Skilled in designing integration and cloud architectures for problem-solving purposes, as well as creating technology-related presentations and delivering superior customer service.
-        </p>
-        <p>
-            Being able to generate technical solutions that answer a business demand through self-reliant research, designing, development, and provision.
-        </p>
-        <p><i>Certified as an AWS Solutions Architect Professional, plus also certified for Azure and OCI cloud services.</i></p>
+    <div class="container">
+        <header class="header">
+            <h1>Tanveer Iqbal</h1>
+            <p>Entrepreneurship in making...</p>
+        </header>
 
-        <q>Creator of revolutionary API mocking solution, <a href="https://www.mockgee.com">Mockgee</a>, is embraced by leading businesses and appreciated by developers all around the world.</q>
-
-        <div class="flex-out">
-            <div>
-                <p>Connect with me:  
-                <a href="https://github.com/tqiqbal" target="_blank"><i class="fa-1x fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/tanveer-iqbal/" target="_blank"><i class="fa-1x fab fa-linkedin"></i></a>
-                </p>
-               <p>Contact: <u style="color: blue; font-size: 0.8em;">contact.tiqbal@gmail.com</u></p>
-            </div>
-            <div class="flex-inner">
-                <div>
-                    <img src="img/profile.jpg" class="img"></img>
+        <main>
+            <section class="profile-section">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Tanveer Iqbal">
                 </div>
-                <div style="text-align: right">
-                    <img src="img/signature.png" style="width: 200px"></img>
+                
+                <div class="profile-info">
+                    <h2>About Me</h2>
+                    <p>Building systems and agents powered by Generative AI technology</p>
+                    
+                    <div class="skills">
+                        <h3>Skills:</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">AI and Transformer Architecture</span>
+                            <span class="skill-item">Cloud Computing</span>
+                            <span class="skill-item">API Integrations</span>
+                            <span class="skill-item">Software Design & Development</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        Creator of revolutionary API mocking solution, <a href="https://www.mockgee.com" target="_blank">Mockgee</a>, embraced by leading businesses and appreciated by developers worldwide.
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-
-    </section>
+            <section class="contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/tqiqbal" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/tanveer-iqbal/" target="_blank">LinkedIn</a>
+                    <a href="https://x.com/iam_tiqbal" target="_blank">X</a>
+                    <a href="mailto:contact.tiqbal@gmail.com">contact.tiqbal@gmail.com</a>
+                </div>
+                
+                <div class="signature">
+                    <img src="img/signature.png" alt="Signature">
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
-
 </html>
